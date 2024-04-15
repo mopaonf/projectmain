@@ -48,3 +48,4 @@ class CourseClass:
       with sqlite3.connect("db.sqlite3") as connection: 
         cursor = connection.cursor()
         cursor.execute(f"DELETE FROM {self.TABLE_NAME} WHERE course_class_id=?", (self.course_class_id,))
+#coment

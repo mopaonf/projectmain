@@ -13,7 +13,7 @@ def save_course(course_name, course_id=None):
         # get course with id
         course = get_course_with_course_id(course_id)
         course.course_name = course_name
-
+ 
     else:
         course = Course(course_name=course_name)
     
